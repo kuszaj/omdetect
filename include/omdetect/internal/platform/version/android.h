@@ -1,0 +1,70 @@
+#include <omdetect/internal/preamble.h>
+#include <omdetect/version.h>
+
+#include <android/api-level.h>
+
+#if __ANDROID_API__ == 34
+    #define OMD_PLATFORM_VERSION OMD_VERSION(14, 0, 0)
+#elif __ANDROID_API__ == 33
+    #define OMD_PLATFORM_VERSION OMD_VERSION(13, 0, 0)
+#elif __ANDROID_API__ == 32 || __ANDROID_API__ == 31
+    #define OMD_PLATFORM_VERSION OMD_VERSION(12, 0, 0)
+#elif __ANDROID_API__ == 30
+    #define OMD_PLATFORM_VERSION OMD_VERSION(11, 0, 0)
+#elif __ANDROID_API__ == 29
+    #define OMD_PLATFORM_VERSION OMD_VERSION(10, 0, 0)
+#elif __ANDROID_API__ == 28
+    #define OMD_PLATFORM_VERSION OMD_VERSION(9, 0, 0)
+#elif __ANDROID_API__ == 27
+    #define OMD_PLATFORM_VERSION OMD_VERSION(8, 1, 0)
+#elif __ANDROID_API__ == 26
+    #define OMD_PLATFORM_VERSION OMD_VERSION(8, 0, 0)
+#elif __ANDROID_API__ == 25
+    #define OMD_PLATFORM_VERSION OMD_VERSION(7, 1, 1)
+#elif __ANDROID_API__ == 24
+    #define OMD_PLATFORM_VERSION OMD_VERSION(7, 0, 0)
+#elif __ANDROID_API__ == 23
+    #define OMD_PLATFORM_VERSION OMD_VERSION(6, 0, 0)
+#elif __ANDROID_API__ == 22
+    #define OMD_PLATFORM_VERSION OMD_VERSION(5, 1, 0)
+#elif __ANDROID_API__ == 21
+    #define OMD_PLATFORM_VERSION OMD_VERSION(5, 0, 0)
+#elif __ANDROID_API__ == 20 || __ANDROID_API__ == 19
+    #define OMD_PLATFORM_VERSION OMD_VERSION(4, 4, 0)
+#elif __ANDROID_API__ == 18
+    #define OMD_PLATFORM_VERSION OMD_VERSION(4, 3, 0)
+#elif __ANDROID_API__ == 17
+    #define OMD_PLATFORM_VERSION OMD_VERSION(4, 2, 2)
+#elif __ANDROID_API__ == 16
+    #define OMD_PLATFORM_VERSION OMD_VERSION(4, 1, 1)
+#elif __ANDROID_API__ == 15
+    #define OMD_PLATFORM_VERSION OMD_VERSION(4, 0, 4)
+#elif __ANDROID_API__ == 14
+    #define OMD_PLATFORM_VERSION OMD_VERSION(4, 0, 2)
+#elif __ANDROID_API__ == 13
+    #define OMD_PLATFORM_VERSION OMD_VERSION(3, 2, 0)
+#elif __ANDROID_API__ == 12
+    #define OMD_PLATFORM_VERSION OMD_VERSION(3, 1, 0)
+#elif __ANDROID_API__ == 11
+    #define OMD_PLATFORM_VERSION OMD_VERSION(3, 0, 0)
+#elif __ANDROID_API__ == 10
+    #define OMD_PLATFORM_VERSION OMD_VERSION(2, 3, 4)
+#elif __ANDROID_API__ == 9
+    #define OMD_PLATFORM_VERSION OMD_VERSION(2, 3, 2)
+#elif __ANDROID_API__ == 8
+    #define OMD_PLATFORM_VERSION OMD_VERSION(2, 2, 0)
+#elif __ANDROID_API__ == 7
+    #define OMD_PLATFORM_VERSION OMD_VERSION(2, 1, 0)
+#elif __ANDROID_API__ == 6
+    #define OMD_PLATFORM_VERSION OMD_VERSION(2, 0, 1)
+#elif __ANDROID_API__ == 5
+    #define OMD_PLATFORM_VERSION OMD_VERSION(2, 0, 0)
+#elif __ANDROID_API__ == 4
+    #define OMD_PLATFORM_VERSION OMD_VERSION(1, 6, 0)
+#elif __ANDROID_API__ == 3
+    #define OMD_PLATFORM_VERSION OMD_VERSION(1, 5, 0)
+#elif __ANDROID_API__ == 2
+    #define OMD_PLATFORM_VERSION OMD_VERSION(1, 1, 0)
+#elif __ANDROID_API__ == 1
+    #define OMD_PLATFORM_VERSION OMD_VERSION(1, 0, 0)
+#endif
