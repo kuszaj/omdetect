@@ -3,7 +3,6 @@
 
 #include <omdetect/arch.h>
 #include <omdetect/cc.h>
-#include <omdetect/endian.h>
 #include <omdetect/platform.h>
 #include <omdetect/std.h>
 #include <omdetect/version.h>
