@@ -5,10 +5,10 @@
 
 #if defined(__NetBSD_Version__)
     /* AABBCCCC00 => (AA, BB, CCCC) */
-    #define OMD_PLATFORM_VERSION OMD_VERSION(
-        __NetBSD_Version__ / 100000000,
-        (__NetBSD_Version__ / 1000000) % 100,
-        (__NetBSD_Version__ / 100) % 1000
+    #define OMD_PLATFORM_VERSION OMD_VERSION( \
+        __NetBSD_Version__ / 100000000,       \
+        (__NetBSD_Version__ / 1000000) % 100, \
+        (__NetBSD_Version__ / 100) % 1000     \
     )
 #elif defined(NetBSD1_3)
     #define OMD_PLATFORM_VERSION OMD_VERSION(1, 3, 0)

@@ -5,10 +5,10 @@
 
 #if __DragonFly_version >= 200000
     /* ABBBCC => (A, BBB, CC) */
-    #define OMD_PLATFORM_VERSION OMD_VERSION(
-        __DragonFly_version / 100000,
-        (__DragonFly_version / 100) % 1000,
-        __DragonFly_version % 100
+    #define OMD_PLATFORM_VERSION OMD_VERSION( \
+        __DragonFly_version / 100000,         \
+        (__DragonFly_version / 100) % 1000,   \
+        __DragonFly_version % 100             \
     )
 #elif __DragonFly_version >= 197500
     #define OMD_PLATFORM_VERSION OMD_VERSION(1, 12, 0)
