@@ -28,6 +28,8 @@
     #include <omdetect/internal/platform/version/haiku.h>
 #elif OMD_PLATFORM == OMD_PLATFORM_IOS || OMD_PLATFORM == OMD_PLATFORM_IOS_SIMULATOR
     #include <omdetect/internal/platform/version/ios.h>
+#elif OMD_PLATFORM == OMD_PLATFORM_LINUX
+    #include <omdetect/internal/platform/version/linux.h>
 #elif OMD_PLATFORM == OMD_PLATFORM_MACOS
     #include <omdetect/internal/platform/version/macos.h>
 #elif OMD_PLATFORM == OMD_PLATFORM_NETBSD
