@@ -79,7 +79,10 @@
     /* Green Hill */
     #define OMD_CC OMD_CC_GHS
 #elif defined(__GNUC__)
-    #if defined(__INTEL_COMPILER) || defined(__ICC) || defined(__ICL) || defined(__ECC)
+    #if (                                                                                                              \
+            defined(__INTEL_LLVM_COMPILER) || defined(__INTEL_COMPILER) || defined(__ICC) || defined(__ICL) ||         \
+            defined(__ECC)                                                                                             \
+        )
         /* ICC */
         #define OMD_CC OMD_CC_ICC
     #elif defined(__MINGW64__) || (defined(__MINGW32__) && defined(__MINGW64_VERSION_MAJOR))
@@ -113,7 +116,10 @@
 #elif defined(__IMAGECRAFT__)
     /* ImageCraft C */
     #define OMD_CC OMD_CC_IMAGECRAFT
-#elif defined(__INTEL_COMPILER) || defined(__ICC) || defined(__ICL) || defined(__ECC)
+#elif (                                                                                                                \
+        defined(__INTEL_LLVM_COMPILER) || defined(__INTEL_COMPILER) || defined(__ICC) || defined(__ICL) ||             \
+        defined(__ECC)                                                                                                 \
+    )
     /* ICC */
     #define OMD_CC OMD_CC_ICC
 #elif defined(__KCC)
@@ -149,7 +155,7 @@
     /* Microtec */
     #define OMD_CC OMD_CC_MRI
 #elif defined(_MSC_VER)
-    #if defined(__INTEL_COMPILER)
+    #if defined(__INTEL_LLVM_COMPILER) || defined(__INTEL_COMPILER)
         /* ICC */
         #define OMD_CC OMD_CC_ICC
     #else
