@@ -55,5 +55,10 @@
 /* Extract encoded day. */
 #define OMD_VERSION_DAY(ymd_version)   (((ymd_version) & 0x1f) + 1)
 
-#endif /* OMD_VERSION_H */
+/* Current project version, major, minor and patch. */
+#define __OMD_VERSION__                OMD_VERSION(0, 0, 1)
+#define __OMD_VERSION_MAJOR__          OMD_VERSION_MAJOR(__OMD_VERSION__)
+#define __OMD_VERSION_MINOR__          OMD_VERSION_MINOR(__OMD_VERSION__)
+#define __OMD_VERSION_PATCH__          OMD_VERSION_PATCH(__OMD_VERSION__)
 
+#endif /* OMD_VERSION_H */
